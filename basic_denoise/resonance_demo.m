@@ -27,7 +27,7 @@ N_ROI = str2num(N{1});
 [raw_f, A, Cn] = extract_raw_trace_video(img,N_ROI);
 df = extract_df_video(raw_f);
 
-figure, stackplot(t, df)
+figure, stackplot(t, df);
 
 %% save
 save(fullfile(foldername, sprintf('data%s', filename(1:end-3))), 'df', 'A', 'Cn', 'raw_f', 't', 'dt');
