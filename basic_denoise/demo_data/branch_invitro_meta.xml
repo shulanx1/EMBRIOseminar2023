@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PVScan version="5.6.64.37" date="3/9/2022 10:47:34 PM" notes="">
+  <SystemIDs SystemID="2478-C948-A149-B28A-1E8B-4382-5F32-3DD7">
+    <SystemID SystemID="4816" Description="University of Purdue" />
+  </SystemIDs>
+  <PVStateShard>
+    <PVStateValue key="activeMode" value="Galvo" />
+    <PVStateValue key="bitDepth" value="13" />
+    <PVStateValue key="currentScanAmplitude">
+      <IndexedValue index="XAxis" value="2.130078125" />
+      <IndexedValue index="YAxis" value="-1.714453125" />
+    </PVStateValue>
+    <PVStateValue key="currentScanCenter">
+      <IndexedValue index="XAxis" value="0.096484375" />
+      <IndexedValue index="YAxis" value="-0.05831473214286" />
+    </PVStateValue>
+    <PVStateValue key="dwellTime" value="6" />
+    <PVStateValue key="framePeriod" value="0.428968" />
+    <PVStateValue key="interlacedScanTrackCount" value="0" />
+    <PVStateValue key="laserPower">
+      <IndexedValue index="0" value="51.2820512820513" description="Imaging" />
+      <IndexedValue index="1" value="0" description="Uncaging" />
+    </PVStateValue>
+    <PVStateValue key="laserWavelength">
+      <IndexedValue index="0" value="810" description="Insight" />
+      <IndexedValue index="1" value="740" description="MaiTai" />
+    </PVStateValue>
+    <PVStateValue key="linesPerFrame" value="231" />
+    <PVStateValue key="maxVoltage">
+      <IndexedValue index="XAxis" value="0.40078125" />
+      <IndexedValue index="YAxis" value="-0.30323660714286" />
+    </PVStateValue>
+    <PVStateValue key="micronsPerPixel">
+      <IndexedValue index="XAxis" value="0.0415736607142857" />
+      <IndexedValue index="YAxis" value="0.0415736607142857" />
+      <IndexedValue index="ZAxis" value="0.4" />
+    </PVStateValue>
+    <PVStateValue key="minVoltage">
+      <IndexedValue index="XAxis" value="-0.2078125" />
+      <IndexedValue index="YAxis" value="0.18660714285714" />
+    </PVStateValue>
+    <PVStateValue key="objectiveLens" value="Olympus 40x" />
+    <PVStateValue key="objectiveLensMag" value="40" />
+    <PVStateValue key="objectiveLensNA" value="0.8" />
+    <PVStateValue key="opticalZoom" value="7" />
+    <PVStateValue key="pixelsPerLine" value="287" />
+    <PVStateValue key="pmtGain">
+      <IndexedValue index="0" value="800" description="PMT 1 " />
+      <IndexedValue index="1" value="900" description="PMT 2" />
+      <IndexedValue index="2" value="0" description="PMT 3 HV" />
+    </PVStateValue>
+    <PVStateValue key="positionCurrent">
+      <SubindexedValues index="XAxis">
+        <SubindexedValue subindex="0" value="2110.77" />
+      </SubindexedValues>
+      <SubindexedValues index="YAxis">
+        <SubindexedValue subindex="0" value="1503.042" />
+      </SubindexedValues>
+      <SubindexedValues index="ZAxis">
+        <SubindexedValue subindex="0" value="15.1" />
+      </SubindexedValues>
+    </PVStateValue>
+    <PVStateValue key="preampFilter" value="Filter2500KHz" description="2.50 MHz" />
+    <PVStateValue key="preampOffset">
+      <SubindexedValues index="0">
+        <SubindexedValue subindex="0" value="0" description="Ch1" />
+        <SubindexedValue subindex="1" value="0" description="Ch2" />
+        <SubindexedValue subindex="2" value="0" description="Dodt" />
+      </SubindexedValues>
+    </PVStateValue>
+    <PVStateValue key="rastersPerFrame" value="1" />
+    <PVStateValue key="rotation" value="0" />
+    <PVStateValue key="samplesPerPixel" value="30" />
+    <PVStateValue key="scanLinePeriod" value="0.001849" />
+    <PVStateValue key="twophotonLaserDispersion">
+      <IndexedValue index="0" value="50.2" description="DeepSee" />
+    </PVStateValue>
+    <PVStateValue key="twophotonLaserPower">
+      <IndexedValue index="0" value="680" />
+      <IndexedValue index="1" value="2680.7" />
+    </PVStateValue>
+    <PVStateValue key="useInterlacedScanPattern" value="False" />
+    <PVStateValue key="xYStageGridIndex" value="-1" />
+    <PVStateValue key="xYStageGridXIndex" value="-1" />
+    <PVStateValue key="xYStageGridYIndex" value="-1" />
+    <PVStateValue key="yAspectExpansion" value="1" />
+    <PVStateValue key="zDevice" value="0" />
+  </PVStateShard>
+  <Sequence type="TSeries Timed Element" cycle="1" time="22:47:35.3667089" xYStageGridDefined="False" xYStageGridNumXPositions="2" xYStageGridNumYPositions="2" xYStageGridOverlapPercentage="88" xYStageGridXOverlap="238.4" xYStageGridYOverlap="238.4">
+    <PVStateShard />
+    <VoltageOutput name="Current" triggerMode="Start with next scan (PFI0)" filename="TSeries-03082022-1423-007_Cycle00001_VoltageOutput_001.xml" relativeTime="0" absoluteTime="0.468999999997322" />
+    <Frame relativeTime="0" absoluteTime="0.585000000006403" index="1" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000001.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000001.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="0.428968" absoluteTime="1.0139680000064" index="2" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000002.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000002.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="0.857936" absoluteTime="1.4429360000064" index="3" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000003.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000003.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="1.286904" absoluteTime="1.8719040000064" index="4" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000004.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000004.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="1.715872" absoluteTime="2.3008720000064" index="5" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000005.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000005.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="2.14484" absoluteTime="2.7298400000064" index="6" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000006.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000006.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="2.573808" absoluteTime="3.1588080000064" index="7" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000007.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000007.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="3.002776" absoluteTime="3.5877760000064" index="8" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000008.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000008.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="3.431744" absoluteTime="4.0167440000064" index="9" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000009.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000009.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="3.860712" absoluteTime="4.4457120000064" index="10" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000010.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000010.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="4.28968" absoluteTime="4.8746800000064" index="11" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000011.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000011.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="4.718648" absoluteTime="5.3036480000064" index="12" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000012.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000012.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="5.147616" absoluteTime="5.7326160000064" index="13" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000013.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000013.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="5.576584" absoluteTime="6.1615840000064" index="14" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000014.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000014.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="6.005552" absoluteTime="6.5905520000064" index="15" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000015.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000015.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="6.43452" absoluteTime="7.0195200000064" index="16" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000016.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000016.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="6.863488" absoluteTime="7.4484880000064" index="17" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000017.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000017.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="7.292456" absoluteTime="7.8774560000064" index="18" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000018.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000018.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="7.721424" absoluteTime="8.3064240000064" index="19" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000019.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000019.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="8.150392" absoluteTime="8.7353920000064" index="20" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000020.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000020.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="8.57936" absoluteTime="9.1643600000064" index="21" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000021.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000021.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="9.008328" absoluteTime="9.5933280000064" index="22" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000022.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000022.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="9.437296" absoluteTime="10.0222960000064" index="23" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000023.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000023.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="9.866264" absoluteTime="10.4512640000064" index="24" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000024.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000024.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="10.295232" absoluteTime="10.8802320000064" index="25" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000025.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000025.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="10.7242" absoluteTime="11.3092000000064" index="26" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000026.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000026.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="11.153168" absoluteTime="11.7381680000064" index="27" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000027.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000027.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="11.582136" absoluteTime="12.1671360000064" index="28" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000028.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000028.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="12.011104" absoluteTime="12.5961040000064" index="29" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000029.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000029.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="12.440072" absoluteTime="13.0250720000064" index="30" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000030.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000030.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="12.86904" absoluteTime="13.4540400000064" index="31" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000031.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000031.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="13.298008" absoluteTime="13.8830080000064" index="32" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000032.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000032.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="13.726976" absoluteTime="14.3119760000064" index="33" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000033.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000033.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="14.155944" absoluteTime="14.7409440000064" index="34" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000034.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000034.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="14.584912" absoluteTime="15.1699120000064" index="35" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000035.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000035.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="15.01388" absoluteTime="15.5988800000064" index="36" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000036.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000036.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="15.442848" absoluteTime="16.0278480000064" index="37" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000037.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000037.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="15.871816" absoluteTime="16.4568160000064" index="38" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000038.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000038.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="16.300784" absoluteTime="16.8857840000064" index="39" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000039.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000039.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="16.729752" absoluteTime="17.3147520000064" index="40" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000040.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000040.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="17.15872" absoluteTime="17.7437200000064" index="41" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000041.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000041.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="17.587688" absoluteTime="18.1726880000064" index="42" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000042.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000042.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="18.016656" absoluteTime="18.6016560000064" index="43" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000043.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000043.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="18.445624" absoluteTime="19.0306240000064" index="44" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000044.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000044.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="18.874592" absoluteTime="19.4595920000064" index="45" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000045.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000045.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="19.30356" absoluteTime="19.8885600000064" index="46" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000046.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000046.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="19.732528" absoluteTime="20.3175280000064" index="47" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000047.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000047.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="20.161496" absoluteTime="20.7464960000064" index="48" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000048.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000048.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="20.590464" absoluteTime="21.1754640000064" index="49" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000049.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000049.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="21.019432" absoluteTime="21.6044320000064" index="50" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000050.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000050.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="21.4484" absoluteTime="22.0334000000064" index="51" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000051.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000051.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="21.877368" absoluteTime="22.4623680000064" index="52" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000052.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000052.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="22.306336" absoluteTime="22.8913360000064" index="53" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000053.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000053.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="22.735304" absoluteTime="23.3203040000064" index="54" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000054.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000054.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="23.164272" absoluteTime="23.7492720000064" index="55" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000055.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000055.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="23.59324" absoluteTime="24.1782400000064" index="56" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000056.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000056.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="24.022208" absoluteTime="24.6072080000064" index="57" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000057.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000057.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="24.451176" absoluteTime="25.0361760000064" index="58" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000058.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000058.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="24.880144" absoluteTime="25.4651440000064" index="59" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000059.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000059.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="25.309112" absoluteTime="25.8941120000064" index="60" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000060.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000060.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="25.73808" absoluteTime="26.3230800000064" index="61" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000061.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000061.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="26.167048" absoluteTime="26.7520480000064" index="62" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000062.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000062.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="26.596016" absoluteTime="27.1810160000064" index="63" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000063.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000063.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="27.024984" absoluteTime="27.6099840000064" index="64" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000064.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000064.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="27.453952" absoluteTime="28.0389520000064" index="65" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000065.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000065.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="27.88292" absoluteTime="28.4679200000064" index="66" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000066.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000066.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="28.311888" absoluteTime="28.8968880000064" index="67" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000067.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000067.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="28.740856" absoluteTime="29.3258560000064" index="68" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000068.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000068.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="29.169824" absoluteTime="29.7548240000064" index="69" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000069.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000069.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="29.598792" absoluteTime="30.1837920000064" index="70" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000070.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000070.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="30.02776" absoluteTime="30.6127600000064" index="71" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000071.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000071.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="30.456728" absoluteTime="31.0417280000064" index="72" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000072.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000072.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="30.885696" absoluteTime="31.4706960000064" index="73" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000073.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000073.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="31.314664" absoluteTime="31.8996640000064" index="74" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000074.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000074.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="31.743632" absoluteTime="32.3286320000064" index="75" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000075.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000075.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="32.1726" absoluteTime="32.7576000000064" index="76" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000076.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000076.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="32.601568" absoluteTime="33.1865680000064" index="77" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000077.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000077.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="33.030536" absoluteTime="33.6155360000064" index="78" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000078.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000078.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="33.459504" absoluteTime="34.0445040000064" index="79" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000079.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000079.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="33.888472" absoluteTime="34.4734720000064" index="80" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000080.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000080.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="34.31744" absoluteTime="34.9024400000064" index="81" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000081.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000081.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="34.746408" absoluteTime="35.3314080000064" index="82" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000082.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000082.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="35.175376" absoluteTime="35.7603760000064" index="83" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000083.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000083.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="35.604344" absoluteTime="36.1893440000064" index="84" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000084.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000084.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="36.033312" absoluteTime="36.6183120000064" index="85" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000085.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000085.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="36.46228" absoluteTime="37.0472800000064" index="86" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000086.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000086.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="36.891248" absoluteTime="37.4762480000064" index="87" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000087.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000087.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="37.320216" absoluteTime="37.9052160000064" index="88" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000088.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000088.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="37.749184" absoluteTime="38.3341840000064" index="89" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000089.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000089.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="38.178152" absoluteTime="38.7631520000064" index="90" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000090.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000090.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="38.60712" absoluteTime="39.1921200000064" index="91" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000091.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000091.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="39.036088" absoluteTime="39.6210880000064" index="92" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000092.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000092.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="39.465056" absoluteTime="40.0500560000064" index="93" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000093.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000093.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="39.894024" absoluteTime="40.4790240000064" index="94" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000094.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000094.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="40.322992" absoluteTime="40.9079920000064" index="95" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000095.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000095.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="40.75196" absoluteTime="41.3369600000064" index="96" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000096.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000096.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="41.180928" absoluteTime="41.7659280000064" index="97" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000097.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000097.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="41.609896" absoluteTime="42.1948960000064" index="98" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000098.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000098.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="42.038864" absoluteTime="42.6238640000064" index="99" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000099.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000099.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+    <Frame relativeTime="42.467832" absoluteTime="43.0528320000064" index="100" parameterSet="CurrentSettings">
+      <File channel="1" channelName="Ch1" filename="TSeries-03082022-1423-007_Cycle00001_Ch1_000100.ome.tif" />
+      <File channel="2" channelName="Ch2" filename="TSeries-03082022-1423-007_Cycle00001_Ch2_000100.ome.tif" />
+      <ExtraParameters lastGoodFrame="0" />
+      <PVStateShard />
+    </Frame>
+  </Sequence>
+</PVScan>
