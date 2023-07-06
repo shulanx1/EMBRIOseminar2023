@@ -27,4 +27,5 @@ t = dt*[0:(size(img, 3)-1)];
 figure, stackplot(t, df, 0.5), xlabel('Time [s]')
 
 %% save
-save(fullfile(foldername, sprintf('data%s', filename(1:end-3))), 'df', 'A', 'Cn', 'raw_f', 't', 'dt');
+[~,name,~] = fileparts(filename);
+save(fullfile(foldername, sprintf('data_%s.mat', name)), 'df', 'A', 'Cn', 'raw_f', 't', 'dt');

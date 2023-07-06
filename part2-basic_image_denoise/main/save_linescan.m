@@ -13,4 +13,5 @@ data_spine.denoise_f = s_raw_f_denoise;
 data_spine.s_raw_df_denoise = s_raw_df_denoise;
 data_spine.filt_df = s_filt_df_denoise;
 
-save(fullfile(foldername, sprintf('data_%s.mat', filename(1:end-3))), 'data_spine', 'data_branch', 'dt', 't');
+[~,name,~] = fileparts(filename);
+save(fullfile(foldername, sprintf('data_%s.mat', name)), 'data_spine', 'data_branch', 'dt', 't');
