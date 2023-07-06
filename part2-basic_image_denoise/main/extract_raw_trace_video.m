@@ -1,12 +1,12 @@
-function [df, raw_f, A, Cn]= extract_raw_trace_video(img,  sen, thre)
+function [df, raw_f, A, Cn]= extract_raw_trace_video(img, thre, sen)
 Cn = std(img, [], 3);
 Cn1 = imgaussfilt(Cn,1.2);
 FOV = [size(Cn, 1), size(Cn, 2)];
-if nargin < 2, sen = 0.1; end
-if nargin < 3, thre = 0.5; end
+if nargin < 3, sen = 0.1; end
+if nargin < 2, thre = 0.5; end
 h = figure(1); imshow(stretch(Cn));
 hold on
-title(sprintf('Please select the ROI'))
+title(sprintf('ROIs'))
 x = 1:FOV(1);
 y = 1:FOV(2);
 BW = imbinarize(stretch(Cn1),"adaptive","Sensitivity",sen);

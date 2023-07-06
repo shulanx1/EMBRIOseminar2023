@@ -24,7 +24,7 @@ t = dt*[0:(size(img, 3)-1)];
 %% auto-segmentation based on thresholding
 
 [df, raw_f, A, Cn] = extract_raw_trace_video(img);
-figure, stackplot(t, df, 0.5);
+figure, stackplot(t, df, 0.5), xlabel('Time [s]')
 
 %% save
 save(fullfile(foldername, sprintf('data%s', filename(1:end-3))), 'df', 'A', 'Cn', 'raw_f', 't', 'dt');
