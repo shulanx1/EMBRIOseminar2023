@@ -15,11 +15,11 @@ img = loadtiff(fullfile(foldername, filename)); % load image
 meta_data = parseXML(fullfile(foldername, filename_meta));  % load metadata
 img = double(img);    % change from uint to double for filtering
 
+%% filter
 img_filt = kalman_stack_filter(img);
 dt = str2num(meta_data.Children(4).Children(12).Attributes(2).Value);  % read dwell time from metadata (s)
 fs = 1/dt;
 t = dt*[0:(size(img, 3)-1)];
-
 
 %% auto-segmentation based on thresholding
 
