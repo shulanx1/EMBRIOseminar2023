@@ -14,7 +14,7 @@ figure('Name','Population Heatmap'),imagesc(DeltaFoverF),axis xy, colormap(hot),
 std_threshold = 3;     
 static_threshold = .01;
 Spikes = rasterizeDFoF(DeltaFoverF,std_threshold,static_threshold);
-figure('Name','Spiking Raster');Show_Spikes(Spikes);xlim([400 500])
+figure('Name','Spiking Raster');Show_Spikes(Spikes);
 %% Calculate coactivity across binary matrix (2 different ways)
 popCoactivity = sum(Spikes,1)/size(Spikes,1); % No binning
 [coactivityIndex,detectedSpikes] = coactive_index(Spikes,ceil(size(Spikes,2)/2)); %With binning
@@ -37,7 +37,7 @@ Connected_ROI = Connectivity_dice(corr);
 figure('Name','Network Map'); NodeSize = 5;EdgeSize = 1;Cell_Map_Dice(AverageImage,Connected_ROI,ROI,NodeSize,EdgeSize)
 %% (5) Graph Theory Analysis
 % Number of edges formed 
-numEdges = length(Connected_ROI,1);
+numEdges = size(Connected_ROI,1);
 % list of all nodes (neurons) that formed at least one connection
 nodeList = vertcat(Connected_ROI(:,1),Connected_ROI(:,2));
 [nodeList,~,ix] = unique(nodeList);
