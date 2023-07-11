@@ -16,5 +16,4 @@ clc
 close all;
 set(0,'DefaultFigureWindowStyle','docked')
 addpath(genpath('main'));
-batchFlag = 0; % Sets if data is to be processed in batches (almost always)
-CaImAnDemo(batchFlag); 
+CaImAnDemo(0); 
