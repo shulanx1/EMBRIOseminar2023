@@ -5,7 +5,7 @@ format compact;
 addpath(genpath('scripts'));
 %% (2) Visualize Segmented Data
 figure('Name','Calcium Segmentation'),
-plot_contours(A,C,ops,1);
+plot_contours(A,C,ops,0);
 %% (3) Visualize Calcium Transience
 figure('Name','Single Calcium Transience'), plot(DeltaFoverF(1,:)); % Single trace
 figure('Name','Population Transience'), stack_plot(DeltaFoverF,1,5,0); % All traces
@@ -25,17 +25,22 @@ pks = 1;
 col = find(sum(Spikes(:,1:2000,1))>pks); % To save computation time
 coSpikes = Spikes(:,col);
 corr = correlation_dice(coSpikes);
-figure,imagesc(corr),colormap("jet");caxis([0 1]),colorbar
+figure('Name','Similarity'),imagesc(corr),colormap("jet");caxis([0 1]),colorbar
 % Plot non-zero correlation 
-figure,histogram(corr(corr>0),'Normalization','probability'),xlabel('Similar`ity Index'),ylabel('Probability')
+figure('Name','Similarity'),histogram(corr(corr>0),'Normalization','probability'),xlabel('Similar`ity Index'),ylabel('Probability')
 %% (4) Representing the data
 % Mean similarity
 % Connectivity
 % Event related calcium fluorescence
 Connected_ROI = Connectivity_dice(corr);
-figure('Name','Network Map'); NodeSize = 5;EdgeSize = 1;Cell_Map_Dice(AverageImage,Connected_ROI,ROIcentroid,NodeSize,EdgeSize)
+
+figure('Name','Network Map'); NodeSize = 5;EdgeSize = 1;Cell_Map_Dice(AverageImage,Connected_ROI,ROI,NodeSize,EdgeSize)
 %% (5) Graph Theory Analysis
-[NumActiveNodes,NodeList,NumNodes,NumEdges,SpatialCentroid,SpatialCentroidVariance,...
-    ActivityCentroid,ActivityCentroidVariance]...
-    = Network_Analysis(ROIcentroid,Connected_ROI);
+% Number of edges formed 
+numEdges = length(Connected_ROI,1);
+% list of all nodes (neurons) that formed at least one connection
+nodeList = vertcat(Connected_ROI(:,1),Connected_ROI(:,2));
+[nodeList,~,ix] = unique(nodeList);
+% Find which neuron has the most connection
+nodeList(:,2) = accumarray(ix,1);
 
