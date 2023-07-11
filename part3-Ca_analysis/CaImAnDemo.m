@@ -57,10 +57,7 @@ end
 
 if motion_correct
     %     registered_files = subdir(fullfile(foldername,['*',append,'.',output_type]));  % list of registered files (modify this to list all the motion corrected files you need to process)
-    registered_files = subdir(fullfile(foldername,['*',append,'.',output_type]));
-    if fileNum==1 % Checks to see if we only wanted to look at one file
         registered_files = subdir(fullfile(foldername,[file_name,append,'.',output_type]));
-    end
 else
     registered_files = subdir(fullfile(foldername,'*_mc.h5'));
 end
@@ -127,11 +124,11 @@ end
 
 %% Set parameters
 sizY = data.sizY;                       % size of data matrix
-patch_size = [128,128];                 % size of each patch along each dimension (optional, default: [128,128])
+patch_size = [256,256];                 % size of each patch along each dimension (optional, default: [128,128])
 overlap = [6,6];                        % amount of overlap in each dimension (optional, default: [6,6])
 
 patches = construct_patches(sizY(1:end-1),patch_size,overlap);
-K = 15;                  % number of components to be found per patch
+K = 20;                  % number of components to be found per patch
 tau = [];                 % std of gaussian kernel (size of neuron) default:5
 p = 2;                   % order of autoregressive system (p = 0 no dynamics, p=1 just decay, p = 2, both rise and decay)
 merge_thr = 0.4;         % merging threshold
@@ -244,7 +241,7 @@ end
 % Save Data for video plotting
 data.b = b;data.f = f;data.A = A_keep; data.C = C_keep;data.R = R_keep; data.params = options;
 savfig = figure(1);
-ax1 = subplot(121); [Coor,json_file] = plot_contours(A_keep,Cn,options,0); title('Selected components','fontweight','bold','fontsize',14);
+ax1 = subplot(121); [Coor,json_file] = plot_contours(A_keep,Cn,options,1); title('Selected components','fontweight','bold','fontsize',14);
 ax2 = subplot(122); plot_contours(A_throw,Cn,options,0);title('Rejected components','fontweight','bold','fontsize',14);
 linkaxes([ax1,ax2],'xy')
 %% Output Variables
@@ -262,7 +259,7 @@ linkaxes([ax1,ax2],'xy')
 A = A_keep; %spatial components
 C = Cn;
 ops = options;
-files = file(fileNum).name;
+files = file(1).name;
 [H,W] = size(Cn);
 AverageImage =ones(H,W);
 num_images = FOV(3);
@@ -277,18 +274,18 @@ for i = 1:length(Coor)
 end
 Noise_Power = R_full;
 
-if ~exist([file(fileNum).folder '\output'],'dir')
-    mkdir([file(fileNum).folder '\output']);
+if ~exist([file(1).folder '/output'],'dir')
+    mkdir([file(1).folder '/output']);
 end
-[folder_name,file_name,~] = fileparts(file(fileNum).name);
-if exist(fullfile([folder_name, '\output'],[file_name,'.mat']),'file')
+[folder_name,file_name,~] = fileparts(file(1).name);
+if exist(fullfile([folder_name, '/output'],[file_name,'.mat']),'file')
     file_name = [file_name '_' datestr(now,30) '_'];
 end
-savepath = fullfile([folder_name, '\output'],[file_name,'.mat']);
+savepath = fullfile([folder_name, '/output'],[file_name,'.mat']);
 save(savepath,'files','AverageImage','num_images',...
     'DeltaFoverF','dDeltaFoverF','ROIcentroid','ROI','Noise_Power','C','A','ops');
 try
-    savepathfig = fullfile([folder_name, '\output'],[file_name,'.fig']);
+    savepathfig = fullfile([folder_name, '/output'],[file_name,'.fig']);
     saveas(savfig,savepathfig);
     close(savfig)
 catch ME
