@@ -1,9 +1,14 @@
-function Cell_Map_Dice(AverageImage,Connected_ROI,ROIbases,NodeSize,EdgeSize)
+function Cell_Map_Dice(AverageImage,Connected_ROI,ROI,NodeSize,EdgeSize)
 
 if nargin < 6; Edgesize = 5;end
 if nargin < 5; NodeSize = 5;end
 
-
+%Fix centroids
+ROIbases = [];
+for i = 1:length(ROI)
+    blah = vertcat(ROI{i}{:});
+    ROIbases(i,:) = floor(mean(blah,1));
+end
 % Centroid = regionprops(AverageImage,'centroid');
 % centroids = cat(1, Centroid.Centroid);
 
