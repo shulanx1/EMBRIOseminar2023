@@ -3,9 +3,9 @@ clc
 close all;
 
 
-addpath([pwd,'\main']);
+addpath([pwd,'\main']); % add custom functions to the path
 basefolder = pwd;
-foldername = [pwd, '\demo_data'];
+foldername = [pwd, '\demo_data']; % data folder
 
 [filename, foldername] = uigetfile({fullfile(foldername, '*.tiff;*.tif')}, 'Pick a image linescan file');
 [filename_meta, ~] = uigetfile({fullfile(foldername, '*.xml;*.xml')}, 'Pick a metadata file');
@@ -13,16 +13,17 @@ foldername = [pwd, '\demo_data'];
 meta_data = parseXML(fullfile(foldername, filename_meta));  % load metadata
 img = double(img); % reformat data from uint to double for FFT
 
-denoise_img = custom_fft(img);
+denoise_img = custom_fft(img); % custom FFT filter
 denoise_img = imrotate(denoise_img,90); % rotate image in 90 degree 
 img = imrotate(img,90); % rotate image in 90 degree 
 
 dwell_time = str2num(meta_data.Children(4).Children(10).Attributes(2).Value)*1e-6;  % read dwell time from metadata (s)
-dt = dwell_time*size(img, 1);   % line rate
+% read dwell time from metadata (s), might differ from image aquisition tools
+dt = dwell_time*size(img, 1);   % line rate (Hz)
 t = dt*[0:(size(img, 2)-1)]; 
 
 close all
-figure(1), imshow(stretch(denoise_img));
+figure(1), imshow(stretch(denoise_img)); % plot the denoised linescan file
 title('denoised linescan')
 %% extrace branch Ca signal
 b_raw_f = extract_raw_trace(img, 'branch');
